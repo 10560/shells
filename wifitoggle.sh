@@ -21,7 +21,7 @@ do
 	case "$opt" in
 		'o') tog=$on ;;
 		'O') tog=$off ;;
-		'?') echo "you erm. typed something wrong..."; exit 1;;
+		'?') echo "you typed something wrong..."; exit 1;;
 	esac
 done
 
@@ -32,7 +32,7 @@ elif [[ "$tog" == "off" ]]; then
 	nmcli radio wifi off
 	exit 0
 else
-	echo "now howd you manage this, eh?"
+	echo "now howd you manage this?"
 	exit 1
 fi
 
